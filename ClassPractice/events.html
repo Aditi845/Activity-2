@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .event-box{
+            padding:20px;
+            border:2px solid red;
+            height:200px;
+            width:300px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1> js events </h1>
+    <div class="event-box "id ="mouseEvent" 
+    onmousedown="mousedown()"
+    onmouseup="mouseup()"
+    onclick="onmouseClick()"
+    onmouseover="mouseover()"
+    onmouseout="mouseout()"
+    > This is a Division for mouse event
+
+    </div>
+    <div onclick="counting()">
+        <img src="black=njdsnjn"height="100px" width="100px">
+        <p>Clicked <span id="Clicked">0</span></p>
+
+    </div>
+    <input type="text"
+    onselect="textSelect()"
+    onkeydown="keydown()"
+    onkeypress="keypress()"
+    onkeyup="keyup()"
+    placeholder="Enter the text here ">
+    <script>
+        function textSelect(){
+            const input=document.getElementById('textin')
+            input.style.backgroundColor='blue'
+        }
+        let count=0;
+        function counting(){
+            count++
+            document.getElementById('Clicked').textContent=count
+            console.log(`image clicked count:${count}`)
+        }
+        function mousedown(){
+            const box=document.getElementById('mouseEvent')
+            box.style.color="purple"
+        }
+        function mouseup(){
+            const box=document.getElementById('mouseEvent')
+            box.style.color="blue"
+        }
+        function mouseover(){
+            doucument.getElementById('mouseEvent').style.backgroundColor="red"
+        }
+        function mouseout(){
+            doucument.getElementById('mouseEvent').style.backgroundColor="yellow"
+        }
+    </script>
+</body>
+</html>

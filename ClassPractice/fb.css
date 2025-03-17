@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-section{
+    width:50%;
+}
+.logo{
+    color: blue;
+    font-size: 48px;
+    font-weight: bold;
+}
+.tagline{
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
+}
+.right-section{
+    width: 40%;
+}
+.login-box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+}
+.login-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.login-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.forget-password{
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 15px;
+}
+hr{
+    margin: 20px;
+}
+.create-btn{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.create-btn:hover{
+    background-color: darkgreen;
+}
+.create-page{
+    text-align: center;
+    margin-top: 15px;
+}
+.create-page{
+    color: black;
+    text-decoration: none;
+}

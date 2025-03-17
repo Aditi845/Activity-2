@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAlert()">Show alert</button>
+    <button onclick="PromptName()">Prompt Name</button>
+    <button onclick="confirm()">Confirm</button>
+
+    <p id="Juhi"></p>
+    <button id="myButton">Click Me</button>
+    <div id ="mouseA">MouseOver and out</div>
+    <div id="output"></div>
+    <script>
+        const output=document.getElementById('output')
+        document.getElementById('my button').addEventListener('click',()=>output.textContent ='Button Clicked')
+        document.getElementById('my button').addEventListener('click',()=>output.textContent ='Button is double Clicked')
+        document.getElementById('mouseA').addEventListener('click',()=>output.textContent ='mouse over the area')
+        document.getElementById('mouseA').addEventListener('click',()=>output.textContent ='mouse out')
+        function showAlert(){
+            alert("This alert is for Show Alert function")
+        }
+        function PromptName(){
+            let name=prompt("what is your name")
+            if(name!=null&& name!=''){
+                document.getElementById('Juhi').innerText='Hello,', +name+'';
+            }else{
+                document.getElementsById('Juhi').innerText='you did not enter anything'
+            }
+        }
+        function Confirm(){
+            let response= confirm('r u sure u want to proceed?')
+            if(response){
+                document.getElementById('Juhi').innerText="you choose to proceed"
+            }else{
+                document.getElementById('Juhi').innerText="you choose to cancel"
+            }
+        }
+let age=45
+let message="you are" +age+ "years old"
+console.log(message)
+let name=test
+document.getElementById('Juhi').innerText= `Hello, ${name}`
+
+function show(){
+    alert('Hello everyone')
+}
+show()
+//functions with arguments 
+function name(para1 , para2){
+
+}
+
+//objects 
+let user1= new Object() //obj constructor
+let user2 ={} //literal syntax
+
+let user={
+    name: 'test',
+    //key "name" and store value "test"
+    age:45
+}
+alert (user.name)
+alert(user.age)
+delete user.age;
+
+//create an empty obj
+//add the property name with value
+//add property surname with value 
+//change the value of the name to alex
+//remove the property name from the objects
+
+
+let ad= {};
+ad.name ="aditi";
+ad.surname="chauhan";
+ad.name ="ani";
+delete person.name;
+change.log(name);
+
+let amount={
+    a:1000,
+    b:500,
+    c:600.
+}
+let sum=amount.a+amount.b+amount.c;
+console.log(sum);
+for (let key in amount){
+    sum+=amount[key]
+}
+alert(sum)
+
+    </script>
+</body>
+</html>
